@@ -358,10 +358,12 @@ def start_code():
     code += "function draw() {\n"
     return code
 
+
 def end_code(algorithm_number):
     code =  "    saveCanvas('output_" + str(algorithm_number) + "', 'png');\n"
     code += "}\n"
     return code
+
 
 def tokens_to_code(tokens, algorithm_number):
     code = start_code()
